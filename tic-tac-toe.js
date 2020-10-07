@@ -25,3 +25,13 @@ s.forEach(i =>{
         }
     })
 })
+s.forEach(i =>{
+    i.addEventListener("over",function(){
+        i.setAttribute("class","hover");
+    })
+})
+s.forEach(i =>{
+    i.addEventListener("leave",function(){
+        i.setAttribute("class","hover O");
+    })
+})
