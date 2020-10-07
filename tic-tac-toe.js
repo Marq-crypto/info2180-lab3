@@ -10,16 +10,16 @@ window.onload=function(){
    
 }
 s.forEach(i =>{
-    s.addEventListener("click",function(){
-        if(!(s.getAttribute("class").includes("X")||s.getAttribute("class").includes("O"))){
-            if (i.querySelector("div")==null){
-                s.setAttribute("class","X");
-                s.innerHTML="X";
+    i.addEventListener("click",function(){
+        if(!(i.getAttribute("class").includes("X")||i.getAttribute("class").includes("O"))){
+            if (i==null){
+                i.setAttribute("class","square X");
+                i.innerHTML="X";
                 winner.push(i);
             }
-            else if(i.querySelector("div")==null){
-                s.setAttribute("class","O");
-                s.innerHTML="O";
+            else if(i==null){
+                i.setAttribute("class","square O");
+                i.innerHTML="O";
                 winner.push(i);
             }
         }
