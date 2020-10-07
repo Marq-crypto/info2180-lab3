@@ -14,12 +14,12 @@ s.forEach(i =>{
         if(!(s.getAttribute("class").includes("X")||s.getAttribute("class").includes("O"))){
             if (i.querySelector("div")==null){
                 s.setAttribute("class","square X");
-                s.innerHTML="X";
+                div.innerHTML="X";
                 winner.push(i);
             }
             else if(i.querySelector("div")==null){
                 s.setAttribute("class","square O");
-                s.innerHTML="O";
+                div.innerHTML="O";
                 winner.push(i);
             }
         }
