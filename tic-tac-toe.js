@@ -13,13 +13,13 @@ s.forEach(i =>{
     s.addEventListener("click",function(){
         if(!(s.getAttribute("class").includes("X")||s.getAttribute("class").includes("O"))){
             if (i.querySelector("div")==null){
-                s.setAttribute("class","square X");
-                div.innerHTML="X";
+                s.setAttribute("class","X");
+                s.innerHTML="X";
                 winner.push(i);
             }
             else if(i.querySelector("div")==null){
-                s.setAttribute("class","square O");
-                div.innerHTML="O";
+                s.setAttribute("class","O");
+                s.innerHTML="O";
                 winner.push(i);
             }
         }
